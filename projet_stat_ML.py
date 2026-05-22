@@ -332,16 +332,7 @@ elif page == "📋 Rapport synthèse":
         ]
     })
 
-    st.dataframe(
-        resultats.style.applymap(
-            lambda v: "color: green; font-weight: bold"
-            if isinstance(v, float) and v > 1
-            else ("color: red; font-weight: bold"
-                  if isinstance(v, float) and v < 1 else ""),
-            subset=["OR"]
-        ),
-        use_container_width=True, hide_index=True
-    )
+   st.dataframe(resultats, use_container_width=True, hide_index=True)
 
     st.markdown("""
     #### Vérification des hypothèses
