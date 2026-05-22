@@ -332,7 +332,7 @@ elif page == "📋 Rapport synthèse":
         ]
     })
 
-   st.dataframe(resultats, use_container_width=True, hide_index=True)
+    st.dataframe(resultats, use_container_width=True, hide_index=True)
 
     st.markdown("""
     #### Vérification des hypothèses
