@@ -229,14 +229,7 @@ elif page == "📈 Modélisation statistique":
 
     col1, col2 = st.columns([1, 1])
     with col1:
-        st.dataframe(
-            or_tab.style.applymap(
-                lambda v: "color: green" if isinstance(v, float) and v>1
-                else ("color: red" if isinstance(v, float) and v<1 else ""),
-                subset=["OR"]
-            ),
-            use_container_width=True
-        )
+        st.dataframe(or_tab, use_container_width=True)
     with col2:
         st.pyplot(fig_forest_plot(or_tab, f"Forest plot — {categorie}"))
 
