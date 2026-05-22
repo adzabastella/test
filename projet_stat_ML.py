@@ -9,8 +9,8 @@ from sklearn.model_selection import StratifiedKFold, cross_val_score
 import sys, os
 
 sys.path.append(os.path.dirname(__file__))
-from modules.donnees import charger_donnees
-from modules.visualisations import (fig_distribution, fig_croise,
+from donnees import charger_donnees
+from visualisations import (fig_distribution, fig_croise,
                                      fig_forest_plot)
 
 #  Configuration de la page Streamlit 
