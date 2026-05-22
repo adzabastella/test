@@ -22,11 +22,11 @@ st.set_page_config(
 )
 
 #  Chargement des données et préparation 
-def get_data():
-    return charger_donnees("CMBR71FL.DTA")
+#def get_data():
+   # return charger_donnees("CMBR71FL.DTA")
 
-base = get_data()
-
+#base = get_data()
+base = charger_donnees()
 #  Sidebar — navigation et filtres
 st.sidebar.image(
     "https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Cameroon.svg",
