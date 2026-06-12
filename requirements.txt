@@ -1,8 +1,8 @@
-pyreadstat
+streamlit
 pandas
 numpy
 matplotlib
 scipy
-statsmodels
 scikit-learn
-streamlit
+statsmodels
+pyreadstat
